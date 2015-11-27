@@ -1,0 +1,40 @@
+.rheumaMan{
+	border-width: 0px; 
+	border-spacing: 0px;
+	margin: auto;
+}
+
+.rheumaMan td {
+	padding: 0px;
+}
+
+.rheumaMainTable {
+}
+
+.rheumaMainTable  td{
+}
+
+.manTd {
+	text-align: center;
+}
+
+.relativePos {
+	position: relative; 
+	top:0px; 
+	left:0px;	
+}
+
+.closeZoom {
+	cursor: pointer;
+}
+
+
+.visualClickRed {
+	position: absolute;
+	cursor:pointer;
+}
+
+.visualClickZoom {
+	position: absolute;
+	cursor:pointer;
+}

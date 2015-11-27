@@ -1,0 +1,15 @@
+Bericht auswerten | index
+	Patienten Auswertung | patients_overview
+	Fragenkatalog anpassen  | fragebogen_anpassen
+	Bericht ausdrucken  | patients_overview
+Verbindungen | meineverbindungen_neue
+	Hinzuf&uuml;gen | meineverbindungen_neue
+	Meine Verbindungen  | meineverbindungen
+Nachrichten | nachrichten
+	Eingang | nachrichten
+	Ausgang | nachrichten_versendet
+ | einstellungen
+	Basis Informationen | einstellungen
+	Passwort | einstellungen_passwort
+	Kontakteinstellungen | einstellungen_kontakt
+	Konto k&uuml;ndigen | konto_kuendigen

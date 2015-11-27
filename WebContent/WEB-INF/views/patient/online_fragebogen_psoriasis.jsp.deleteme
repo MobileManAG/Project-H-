@@ -1,0 +1,253 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/taglibs.inc" %>
+<m:patientMasterMenu>
+
+	<t:img src="onlinefragebogen_titel.png" alt="" width="640" height="32" />
+	<br />
+	<br />
+      Gesundheitsgruppe: Chronische Schuppenflechten oder Psoriasis<br />
+	<br />
+	<br />
+	<table width="640" border="0">
+		<tr bgcolor="71ab57">
+			<td height="17" colspan="4" bgcolor="#71ab57" style="border: 1px solid #a9aeb1;"><font color="#FFFFFF"><strong>Einmalige Abfrage (wird nur das erste Mal
+			abgefragt)</strong></font></td>
+		</tr>
+	</table>
+	<table width="640" border="0">
+		<tr>
+			<td width="120"><strong>Jahrgang</strong></td>
+			<td colspan="2"><input type="text" name="textfield3" /></td>
+		</tr>
+		<tr>
+			<td><strong>Geschlecht</strong></td>
+			<td colspan="2">Mann <input type="radio" name="radiobutton" value="radiobutton" /> Frau <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td height="145"><strong>Medikamente</strong></td>
+			<td colspan="2">
+			<table width="90%" border="0">
+				<tr>
+					<td>&nbsp;</td>
+					<td bgcolor="5093c1">
+					<div align="center"><strong><font color="#000000">Ja</font></strong></div>
+					</td>
+					<td bgcolor="5093c1">
+					<div align="center"><strong><font color="#000000">Nein</font></strong></div>
+					</td>
+				</tr>
+				<tr>
+					<td height="24">Antirheumatika</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>Kortison Medikamente</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>Herk&ouml;mmliche Basismedikamente</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>Biotechnologisch hergestellte Basismedikamente</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+					<td>
+					<div align="center"><input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>Andere</td>
+					<td colspan="2"><input name="textfield322" type="text" size="45" /></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Datum erste Symptome</strong></td>
+			<td colspan="2"><input name="textfield4" type="text" value="00/00/0000" /></td>
+		</tr>
+		<tr>
+			<td><strong>Datum Diagnose</strong></td>
+			<td colspan="2"><input name="textfield42" type="text" value="00/00/0000" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3"><font color="#000000"><strong>Frage 1: Bild hochladen von Ihrer befallenen Stelle</strong></font></td>
+		</tr>
+		<tr>
+			<td height="49">&nbsp;</td>
+			<td colspan="2"><label for="fileField"></label> <input type="file" name="fileField" id="fileField" /> <br />
+			Format .jpg, .png, .bmp |&nbsp;m<br />
+			Max. Gr&ouml;sse 1MB<br />
+			Nicht mehr als 3 Bilder hochladen<br />
+			Keine Gesichtserkennung um Daten anonym zu behalten)</td>
+		</tr>
+		<tr>
+			<td height="204">Datum der Aufnahme</td>
+			<td colspan="2"><t:img src="datepicker.png" alt="" width="239" height="180" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="3"><font color="#000000"><strong>Frage 4: Gesundheitszustand</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="2">Wie w&uuml;rden Sie Ihren derzeitigen Gesundheitszustand beschreiben? Bitte tippen Sie auf den zutreffenden Bereich.</td>
+			<td width="515">
+			<table width="20%" border="0">
+				<tr>
+					<td>
+					<div align="center"><t:img src="smiling.png" width="44" height="44" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">0 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">1 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">2 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">3 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">4 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">5 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">6 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">7 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">8 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">9 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center">10 <input type="radio" name="radiobutton" value="radiobutton" /></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div align="center"><t:img src="frowning.png" width="44" height="44" /></div>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="3"><font color="#000000"><strong>Frage 5: Psychologisches Befinden</strong></font></td>
+		</tr>
+		<tr>
+			<td height="37" colspan="3">Bitte beantworten Sie jede Zeile mit &quot;Ja&quot; oder &quot;Nein. Ich f&uuml;hle mich heute...</td>
+		</tr>
+		<tr>
+			<td colspan="2">...voller Schwung</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...sehr nerv&ouml;s</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...so niedergeschlagen, dass mich nichts aufheitern konnte</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...ruhig und gelassen</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...voller Energie</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...entmutigt und traurig</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...ersch&ouml;pft</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...gl&uuml;cklich</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">...m&uuml;de</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td height="50" colspan="2">Mussten Sie Ihrer Arbeitsstelle aufgrund Ihrer Erkrankung in den letzten 7 Tagen fern bleiben?</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+		</tr>
+		<tr>
+			<td height="50" colspan="2">&nbsp;</td>
+			<td><t:img src="buttonvorschau.png" alt="" width="134" height="30" /></td>
+		</tr>
+		<tr>
+			<td height="50" colspan="2">&nbsp;</td>
+			<td><t:apatient href="online_fragebogen"><t:img src="buttonzuruck.png" alt="" width="134" height="30" /></t:apatient></td>
+		</tr>
+	</table>
+</m:patientMasterMenu>

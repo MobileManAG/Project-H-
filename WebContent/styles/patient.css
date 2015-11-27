@@ -1,0 +1,161 @@
+a:hover{
+color:#a19d9d;
+}
+
+#headerimage{
+background-image: url(../images/projecth.png);
+}
+
+#innerfooter{
+height:16px;
+}
+
+.index_table1 {
+	border: 1px solid #DDDEE1;
+	background-color: #e8eefa;
+	width: 300px;
+}
+
+.questionary_container {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.questionary_table {
+	width: 100%;
+}
+
+th {
+	text-align: left;
+}
+
+.questionary_table, table.questionary_table td, table.questionary_table th {
+	border: 1px solid #808080;
+}
+
+table.questionary_table th {
+	background-color: #5093c1;
+	color: #FFFFFF;
+}
+
+
+
+.patient_info {
+	width: 100%;
+	color: #FFFFFF;
+	font-weight: bold;
+}	
+	
+
+.patient_info th,  .patient_info td{
+	padding: 5px;
+	padding-left: 10px;
+	border: 1px solid #FFFFFF;
+}
+
+.patient_info th {
+	background-color: #5093C1;
+}
+
+.patient_info td {
+	background-color: #54B655;
+}
+
+table.kpi_table {
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+table.kpi_table td {
+	padding: 3;
+	padding-right: 20;
+}
+
+.kpi {
+	color:#FFFFFF; 
+	background-color:#5093C1;
+	font-weight: bold;
+	border: 2px solid #54B655;
+}
+
+.kpi td {
+	padding: 10px;
+}
+
+.ul_info li {
+	list-style-type: disc;
+	margin-left: 16;
+}
+
+.print {
+	margin-top: -25px;
+	margin-bottom: 10px;
+	color: #5093C1;
+}
+
+.print img {
+	vertical-align: middle;
+}
+
+a.deflink {
+	color: #5093C1;
+}
+
+#dateInfoLeft, #dateInfoRight {
+	color: #5093C1;
+	font-weight: bold;
+	font-size: larger;
+}
+
+#dateInfoLeft {
+	float:left;
+}
+
+#dateInfoRight {
+	float: right;
+	text-align: right;
+}
+
+.onlineFrame {
+	border: 1px solid #CECFCE;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+.onlineInner {
+	padding: 5px;
+}
+
+.onlineSubtitle {
+	padding: 5px;
+	text-align: left;
+}
+
+.questionFrame {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.onlineCaptionNormal, .onlineCaptionPatient, .onlineCaptionDoctor {
+	color: #FFFFFF;
+	border-bottom: 1px solid #CECFCE;
+	padding: 5px;
+}
+
+.onlineCaptionNormal {
+	background-color: #73AE52;
+}
+
+.onlineCaptionPatient {
+	background-color: #EAC300;
+}
+
+.onlineCaptionDoctor {
+	background-color: #FF0000;
+}
+
+.userCreated {
+	border: 1px solid #f9eaa7; 
+	background-color: #ffffcc; 
+	padding: 20px;
+}

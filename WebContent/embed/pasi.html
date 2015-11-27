@@ -1,0 +1,1403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+		<title>Psoriasis Area and Severity Index (PASI) Online Rechner></title>
+		<link rel="shortcut icon" href="../images/favicon.png"/>
+		<link href="../styles/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="../styles/main.css" rel="stylesheet" type="text/css"/>
+		<link href="../styles/jquery-ui-1.8.6.custom.css" rel="stylesheet" type="text/css"/>
+		<link href="../styles/diseases.css" rel="stylesheet" type="text/css"/>	
+	  	<script src="../scripts/jquery-1.4.4.min.js"></script>
+	  	<script src="../scripts/jquery-ui-1.8.6.custom.min.js"></script>
+		<script src="../scripts/jquery.datepick-de-CH.js"></script>
+		<script src="../scripts/vtip.js"></script>
+		<script src="../scripts/roundedCorners.js"></script>
+		<script src="../scripts/jquery.blockUI.js"></script>
+		<script src="../scripts/WebKitDetect.js"></script>
+		<style>
+		#radios1_1 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios1_1 .ui-buttonset .ui-button { margin-left: 0px; margin-right: 0px; }
+		#radios1_1 .ui-button {float: left; margin-right: 1px;}
+		#radios1_1 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 70px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios1_2 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios1_2 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios1_2 .ui-button {float: left; margin-right: 1px;}
+		#radios1_2 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios1_3 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios1_3 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios1_3 .ui-button {float: left; margin-right: 1px;}
+		#radios1_3 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios1_4 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios1_4 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios1_4 .ui-button {float: left; margin-right: 1px;}
+		#radios1_4 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios2_1 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios2_1 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios2_1 .ui-button {float: left; margin-right: 1px;}
+		#radios2_1 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 70px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios2_2 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios2_2 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios2_2 .ui-button {float: left; margin-right: 1px;}
+		#radios2_2 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios2_3 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios2_3 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios2_3 .ui-button {float: left; margin-right: 1px;}
+		#radios2_3 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios2_4 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios2_4 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios2_4 .ui-button {float: left; margin-right: 1px;}
+		#radios2_4 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios3_1 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios3_1 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios3_1 .ui-button {float: left; margin-right: 1px;}
+		#radios3_1 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 70px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios3_2 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios3_2 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios3_2 .ui-button {float: left; margin-right: 1px;}
+		#radios3_2 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios3_3 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios3_3 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios3_3 .ui-button {float: left; margin-right: 1px;}
+		#radios3_3 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios3_4 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios3_4 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios3_4 .ui-button {float: left; margin-right: 1px;}
+		#radios3_4 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios4_1 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios4_1 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios4_1 .ui-button {float: left; margin-right: 1px;}
+		#radios4_1 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 70px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios4_2 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios4_2 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios4_2 .ui-button {float: left; margin-right: 1px;}
+		#radios4_2 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios4_3 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios4_3 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios4_3 .ui-button {float: left; margin-right: 1px;}
+		#radios4_3 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		#radios4_4 .ui-buttonset { margin-right: 7px; background-color: #fff;}
+		#radios4_4 .ui-buttonset .ui-button { margin-left: 0; margin-right: 0; }
+		#radios4_4 .ui-button {float: left; margin-right: 1px;}
+		#radios4_4 .ui-button .ui-button-text { display: block; line-height: 1.0; font-size:12px; width: 100px; padding-left: 0px; padding-right: 0px; margin-right: 0px;}
+		</style>
+	</head>
+<body>
+<div style="width: 700px;">
+	<a href="../embed/pasi.html" target="_blank">
+		<img src="../images/button_psoriasis.png" alt="psoriasis" width="142" height="103" style="float: right;"/>
+	</a>
+	<br />
+		PASI steht f&uuml;r Psoriasis Area and Severity Index und ist ein Index zur Ermittlung des Schweregrades von Psoriasis-Erkrankungen. Der PASI-Score kann 0 - 72 Punkte erreichen.
+		<br />
+		<br />
+		Klicken Sie hierbei auf die betroffenen K&ouml;rperteile und machen Sie Ihre Angabe.
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+
+		<table width="640" class="noborder">
+			<tbody><tr>
+				<td width="350px">
+					<table class="noborders">
+						<tbody><tr>	
+							<td colspan="3">
+								<div class="ps_man_head" id="mhead">
+								</div>
+							</td>
+						</tr>
+						<tr>	
+							<td rowspan="2">
+								<div class="ps_man_left_hand" id="lhand">
+								</div>
+							</td>
+							<td>
+								<div class="ps_man_body" id="mbody">
+								</div>
+							</td>
+							<td rowspan="2">
+								<div class="ps_man_right_hand" id="rhand">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="ps_man_butt" id="mbutt">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<div class="ps_man_legs" id="mlegs">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<div class="ps_man_feet" id="mfeet">
+								</div>
+							</td>
+						</tr>
+						
+					</tbody></table>
+				</td>
+				<td style="vertical-align: top;">
+					<table id="tpasi">
+						<tbody><tr>
+							<td rowspan="4" width="80px">
+								<div class="pasiheader">Kopf</div>
+							</td>
+							<td rowspan="4" width="45px">
+								<div id="pasiheader1" class="pasiheader_nonselected"></div>
+							</td>
+							<td width="75px">
+								<label class="opt">Ausdehnung:</label>
+							</td>
+							<td width="75px">
+								<input type="text" id="amount11" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">R&ouml;tlichkeit:</label>
+							</td>
+							<td>
+								<input type="text" id="amount12" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Dicke:</label>
+							</td>
+							<td>
+								<input type="text" id="amount13" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Schuppung:</label>
+						  </td>
+							<td>
+								<input type="text" id="amount14" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br />
+							</td>
+						</tr>
+						
+						<tr>
+							<td rowspan="4" style="vertical-align: center;">
+								<div class="pasiheader">Rumpf</div>
+							</td>
+							<td rowspan="4" style="vertical-align: center;">
+								<div id="pasiheader2"></div>
+							</td>
+							<td>
+								<label class="opt">Ausdehnung:</label>
+							</td>
+							<td>
+								<input type="text" id="amount21" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">R&ouml;tlichkeit:</label>
+						  </td>
+							<td>
+								<input type="text" id="amount22" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Dicke:</label>
+							</td>
+							<td>
+								<input type="text" id="amount23" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Schuppung:</label>
+						  </td>
+							<td>
+								<input type="text" id="amount24" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br />
+							</td>
+						</tr>
+						
+						
+						<tr>
+							<td rowspan="4" style="vertical-align: center;">
+								<div class="pasiheader">Arme</div>
+							</td>
+							<td rowspan="4" style="vertical-align: center;">
+								<div id="pasiheader3"></div>
+							</td>
+							<td>
+								<label class="opt">Ausdehnung:</label>
+							</td>
+							<td>
+								<input type="text" id="amount31" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">R&ouml;tlichkeit:</label>
+						  </td>
+							<td>
+								<input type="text" id="amount32" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Dicke:</label>
+							</td>
+							<td>
+								<input type="text" id="amount33" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+							
+						</tr>
+						<tr>
+							
+							<td>
+								<label class="opt">Schuppung:</label>
+						  </td>
+							<td>
+								<input type="text" id="amount34" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br />
+							</td>
+						</tr>
+						
+						
+						<tr>
+							<td rowspan="4" style="vertical-align: center;">
+								<div class="pasiheader">Beine</div>
+							</td>
+							<td rowspan="4" style="vertical-align: center;">
+								<div id="pasiheader4"></div>
+							</td>
+							<td>
+								<label class="opt">Ausdehnung:</label>
+							</td>
+							<td>
+								<input type="text" id="amount41" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">R&ouml;tlichkeit:</label>
+						  </td>
+							<td>
+								<input type="text" id="amount42" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Dicke:</label>
+							</td>
+							<td>
+								<input type="text" id="amount43" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="opt">Schuppung:</label>
+							</td>
+							<td>
+								<input type="text" id="amount44" style="margin-left:20px; text-align:left; width:80px; border:0;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br />
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all" style="display: none; ">
+			<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+				<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-1">Kopf</a></li>
+				<li class="ui-state-default ui-corner-top"><a href="#tabs-2">Rumpf</a></li>
+				<li class="ui-state-default ui-corner-top"><a href="#tabs-3">Arme</a></li>
+				<li class="ui-state-default ui-corner-top"><a href="#tabs-4">Beine</a></li>
+			</ul>
+			
+			<div id="tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+				<br />
+				<form name="form1_1">
+					
+					<div align="left">
+						<label>Ausdehnungsgrad der befallenen K&ouml;rperoberfl&auml;che in %.</label>
+					</div>
+					<br />
+					
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp11">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp12">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp13">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp14">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp15">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp16">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp17">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios1_1" class="ui-buttonset">
+						<input type="radio" id="radio1_11" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio1_11" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">0%</span></label>			
+						<input type="radio" id="radio1_12" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio1_12" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">&lt;10%</span></label>
+						<input type="radio" id="radio1_13" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio1_13" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">10-29%</span></label>
+						<input type="radio" id="radio1_14" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio1_14" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">30-49%</span></label>
+						<input type="radio" id="radio1_15" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio1_15" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">50-69%</span></label>
+						<input type="radio" id="radio1_16" name="radio" value="5" class="ui-helper-hidden-accessible"/><label for="radio1_16" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">70-89%</span></label>
+						<input type="radio" id="radio1_17" name="radio" value="6" class="ui-helper-hidden-accessible"/><label for="radio1_17" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">90-100%</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form1_2">
+					<div align="left">
+						<br /><label>R&ouml;tlichkeit (Erythema)</label>
+						<br />
+						<label class="opt">Bitte geben Sie den Grad der R&ouml;tlichkeit an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios1_2" class="ui-buttonset">
+						<input type="radio" id="radio1_21" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio1_21" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio1_22" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio1_22" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio1_23" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio1_23" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio1_24" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio1_24" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio1_25" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio1_25" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form1_3">
+					<div align="left">
+						<br /><label>Dicke (Induration)</label>
+						<br />
+						<label class="opt">Bitte gebe Sie die Dicke der Verkrustung an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp31">
+									<div class="hboxt">0.00 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp32">
+									<div class="hboxt">0.25 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp33">
+									<div class="hboxt">0.50 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp34">
+									<div class="hboxt">0.75 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp35">
+									<div class="hboxt">1.00 mm</div>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios1_3" class="ui-buttonset">
+						<input type="radio" id="radio1_31" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio1_31" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio1_32" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio1_32" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio1_33" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio1_33" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio1_34" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio1_34" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio1_35" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio1_35" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form1_4">
+					<br /><div align="left"><label>Schuppung (Desquamation)</label><br />
+						<label class="opt">Bitte geben Sie die St&auml;rke der Schuppung an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios1_4" class="ui-buttonset">
+						<input type="radio" id="radio1_41" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio1_41" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio1_42" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio1_42" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio1_43" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio1_43" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio1_44" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio1_44" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio1_45" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio1_45" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+			</div>
+			<div id="tabs-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+				<br />
+				<form name="form2_1">
+					<div align="left">
+					  <label>Ausdehnungsgrad der befallenen K&ouml;rperoberfl&auml;che in %.</label>
+				  </div>
+					<br />
+					
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp11">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp12">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp13">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp14">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp15">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp16">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp17">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios2_1" class="ui-buttonset">
+						<input type="radio" id="radio2_11" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio2_11" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">0%</span></label>			
+						<input type="radio" id="radio2_12" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio2_12" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">&lt;10%</span></label>
+						<input type="radio" id="radio2_13" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio2_13" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">10-29%</span></label>
+						<input type="radio" id="radio2_14" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio2_14" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">30-49%</span></label>
+						<input type="radio" id="radio2_15" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio2_15" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">50-69%</span></label>
+						<input type="radio" id="radio2_16" name="radio" value="5" class="ui-helper-hidden-accessible"/><label for="radio2_16" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">70-89%</span></label>
+						<input type="radio" id="radio2_17" name="radio" value="6" class="ui-helper-hidden-accessible"/><label for="radio2_17" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">90-100%</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form2_2">
+					<div align="left">
+					 <br /> <label>R&ouml;tlichkeit (Erythema)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie den Grad der R&ouml;tlichkeit an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios2_2" class="ui-buttonset">
+						<input type="radio" id="radio2_21" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio2_21" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio2_22" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio2_22" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio2_23" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio2_23" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio2_24" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio2_24" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio2_25" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio2_25" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form2_3">
+					<div align="left">
+					<br />  <label>Dicke (Induration)</label>
+				    <br />
+						<label class="opt">Bitte gebe Sie die Dicke der Verkrustung an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp31">
+									<div class="hboxt">0.00 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp32">
+									<div class="hboxt">0.25 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp33">
+									<div class="hboxt">0.50 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp34">
+									<div class="hboxt">0.75 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp35">
+									<div class="hboxt">1.00 mm</div>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios2_3" class="ui-buttonset">
+						<input type="radio" id="radio2_31" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio2_31" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio2_32" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio2_32" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio2_33" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio2_33" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio2_34" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio2_34" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio2_35" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio2_35" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form2_4">
+						<div align="left">
+					<br />  <label>Schuppung (Desquamation)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie die St&auml;rke der Schuppung an.</label>
+                        </div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios2_4" class="ui-buttonset">
+						<input type="radio" id="radio2_41" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio2_41" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio2_42" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio2_42" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio2_43" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio2_43" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio2_44" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio2_44" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio2_45" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio2_45" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+			</div>
+			<div id="tabs-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+				<br />
+				<form name="form3_1">
+					<div align="left">
+					  <label>Ausdehnungsgrad der befallenen K&ouml;rperoberfl&auml;che in %.</label>
+				  </div>
+					<br />
+					
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp11">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp12">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp13">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp14">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp15">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp16">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp17">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios3_1" class="ui-buttonset">
+						<input type="radio" id="radio3_11" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio3_11" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">0%</span></label>			
+						<input type="radio" id="radio3_12" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio3_12" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">&lt;10%</span></label>
+						<input type="radio" id="radio3_13" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio3_13" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">10-29%</span></label>
+						<input type="radio" id="radio3_14" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio3_14" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">30-49%</span></label>
+						<input type="radio" id="radio3_15" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio3_15" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">50-69%</span></label>
+						<input type="radio" id="radio3_16" name="radio" value="5" class="ui-helper-hidden-accessible"/><label for="radio3_16" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">70-89%</span></label>
+						<input type="radio" id="radio3_17" name="radio" value="6" class="ui-helper-hidden-accessible"/><label for="radio3_17" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">90-100%</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form3_2">
+					<div align="left">
+					<br />  <label>R&ouml;tlichkeit (Erythema)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie den Grad der R&ouml;tlichkeit an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios3_2" class="ui-buttonset">
+						<input type="radio" id="radio3_21" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio3_21" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio3_22" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio3_22" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio3_23" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio3_23" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio3_24" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio3_24" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio3_25" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio3_25" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form3_3">
+					<div align="left">
+					<br />  <label>Dicke (Induration)</label>
+				    <br />
+						<label class="opt">Bitte gebe Sie die Dicke der Verkrustung an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp31">
+									<div class="hboxt">0.00 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp32">
+									<div class="hboxt">0.25 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp33">
+									<div class="hboxt">0.50 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp34">
+									<div class="hboxt">0.75 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp35">
+									<div class="hboxt">1.00 mm</div>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios3_3" class="ui-buttonset">
+						<input type="radio" id="radio3_31" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio3_31" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio3_32" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio3_32" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio3_33" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio3_33" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio3_34" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio3_34" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio3_35" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio3_35" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form3_4">
+						<div align="left">
+				<br />	  <label>Schuppung (Desquamation)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie die St&auml;rke der Schuppung an.</label>
+                        </div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios3_4" class="ui-buttonset">
+						<input type="radio" id="radio3_41" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio3_41" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio3_42" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio3_42" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio3_43" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio3_43" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio3_44" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio3_44" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio3_45" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio3_45" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+			</div>
+			<div id="tabs-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+				<br />
+				<form name="form4_1">
+					<div align="left">
+					  <label>Ausdehnungsgrad der befallenen K&ouml;rperoberfl&auml;che in %.</label>
+				  </div>
+					<br />
+					
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp11">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp12">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp13">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp14">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp15">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp16">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp17">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios4_1" class="ui-buttonset">
+						<input type="radio" id="radio4_11" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio4_11" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">0%</span></label>			
+						<input type="radio" id="radio4_12" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio4_12" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">&lt;10%</span></label>
+						<input type="radio" id="radio4_13" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio4_13" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">10-29%</span></label>
+						<input type="radio" id="radio4_14" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio4_14" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">30-49%</span></label>
+						<input type="radio" id="radio4_15" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio4_15" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">50-69%</span></label>
+						<input type="radio" id="radio4_16" name="radio" value="5" class="ui-helper-hidden-accessible"/><label for="radio4_16" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">70-89%</span></label>
+						<input type="radio" id="radio4_17" name="radio" value="6" class="ui-helper-hidden-accessible"/><label for="radio4_17" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">90-100%</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form4_2">
+					<div align="left">
+					<br />  <label>R&ouml;tlichkeit (Erythema)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie den Grad der R&ouml;tlichkeit an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios4_2" class="ui-buttonset">
+						<input type="radio" id="radio4_21" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio4_21" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio4_22" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio4_22" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio4_23" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio4_23" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio4_24" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio4_24" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio4_25" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio4_25" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form4_3">
+					<div align="left">
+			<br />		  <label>Dicke (Induration)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie die Dicke der Verkrustung an.</label>
+					</div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp31">
+									<div class="hboxt">0.00 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp32">
+									<div class="hboxt">0.25 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp33">
+									<div class="hboxt">0.50 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp34">
+									<div class="hboxt">0.75 mm</div>
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp35">
+									<div class="hboxt">1.00 mm</div>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios4_3" class="ui-buttonset">
+						<input type="radio" id="radio4_31" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio4_31" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio4_32" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio4_32" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio4_33" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio4_33" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio4_34" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio4_34" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio4_35" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio4_35" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+				<br />
+				<br />
+				<form name="form4_4">
+						<div align="left">
+			<br />		  <label>Schuppung (Desquamation)</label>
+				    <br />
+						<label class="opt">Bitte geben Sie die St&auml;rke der Schuppung an.</label>
+                        </div>
+					<br />
+					<table width="500" class="noborder">
+						<tbody><tr>
+							<td width="100">
+								<div class="hboxp21">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp22">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp23">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp24">
+								</div>
+							</td>
+							<td width="100">
+								<div class="hboxp25">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+					<div id="radios4_4" class="ui-buttonset">
+						<input type="radio" id="radio4_41" name="radio" value="0" checked="checked" class="ui-helper-hidden-accessible"/><label for="radio4_41" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only" aria-pressed="true" role="button" aria-disabled="false"><span class="ui-button-text">Gar nicht</span></label>			
+						<input type="radio" id="radio4_42" name="radio" value="1" class="ui-helper-hidden-accessible"/><label for="radio4_42" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Mild</span></label>
+						<input type="radio" id="radio4_43" name="radio" value="2" class="ui-helper-hidden-accessible"/><label for="radio4_43" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Moderat</span></label>
+						<input type="radio" id="radio4_44" name="radio" value="3" class="ui-helper-hidden-accessible"/><label for="radio4_44" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Stark</span></label>
+						<input type="radio" id="radio4_45" name="radio" value="4" class="ui-helper-hidden-accessible"/><label for="radio4_45" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sehr stark</span></label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<br />
+		<br />
+		<table width="640" border="0">
+			<tbody><tr>
+				<td>
+					<!-- 
+					<input type="submit"  id='berechnen' value="BERECHNEN"/>
+					 -->
+				</td>
+			</tr>
+			<br />
+			<br />
+			<tr>	
+				<td style="width: 160px; text-align: left; vertical-align: center;">Ihr PASI Wert betr&auml;gt:</td>
+				<td style="width: 480px; text-align: left; vertical-align: center;">
+					<input type="text" id="pasi" style="width: 100px; height: 50px; text-align:center; border:solid 1px #000; color:#000; font-size:24px; font-weight:bold;"/>
+				</td>
+			</tr>
+		</tbody></table>
+</div>
+<script>
+	$(function() {
+		$( "#tabs" ).tabs();
+
+		$( "#radios1_1" ).buttonset();
+		$( "#radios1_2" ).buttonset();
+		$( "#radios1_3" ).buttonset();
+		$( "#radios1_4" ).buttonset();
+
+		$( "#radios2_1" ).buttonset();
+		$( "#radios2_2" ).buttonset();
+		$( "#radios2_3" ).buttonset();
+		$( "#radios2_4" ).buttonset();
+
+		$( "#radios3_1" ).buttonset();
+		$( "#radios3_2" ).buttonset();
+		$( "#radios3_3" ).buttonset();
+		$( "#radios3_4" ).buttonset();
+
+		$( "#radios4_1" ).buttonset();
+		$( "#radios4_2" ).buttonset();
+		$( "#radios4_3" ).buttonset();
+		$( "#radios4_4" ).buttonset();
+
+		
+		
+		function getTextValue(number){
+			var result = '';
+			if(number == 0){ result = 'Gar nicht'};
+			if(number == 1){ result = 'Mild'};
+			if(number == 2){ result = 'Moderat'};
+			if(number == 3){ result = 'Stark'};
+			if(number == 4){ result = 'Sehr stark'};
+			return result;
+		}
+
+		function getTextPercValue(number){
+			var result = '';
+			if(number == 0){ result = '0%'};
+			if(number == 1){ result = '<10%'};
+			if(number == 2){ result = '10-29%'};
+			if(number == 3){ result = '30-49%'};
+			if(number == 4){ result = '50-69%'};
+			if(number == 5){ result = '70-89%'};
+			if(number == 6){ result = '90-100%'};
+			return result;
+		}
+
+		function calculate() {
+			var koef1 = 0.1; 
+			var koef2 = 0.3; 
+			var koef3 = 0.2; 
+			var koef4 = 0.4; 
+			
+			value_1t_1 = ((parseInt(a12) + parseInt(a13) + parseInt(a14))*grade1)*koef1;
+			value_2t_1 = ((parseInt(a22) + parseInt(a23) + parseInt(a24))*grade2)*koef2;
+			value_3t_1 = ((parseInt(a32) + parseInt(a33) + parseInt(a34))*grade3)*koef3;
+			value_4t_1 = ((parseInt(a42) + parseInt(a43) + parseInt(a44))*grade4)*koef4;
+			
+			sum = value_1t_1 + value_2t_1 + value_3t_1 + value_4t_1;
+			$( "#pasi" ).val(sum.toFixed(2));
+		}
+		
+		function resetClasses(){
+			$( "#tabs" ).css("display","block");
+			
+			$("#lhand").removeClass('ps_man_left_hand_active').addClass('ps_man_left_hand');
+			$("#rhand").removeClass('ps_man_right_hand_active').addClass('ps_man_right_hand');
+			$("#mhead").removeClass('ps_man_head_active').addClass('ps_man_head');
+			$("#mbody").removeClass('ps_man_body_active').addClass('ps_man_body');
+			$("#mbutt").removeClass('ps_man_butt_active').addClass('ps_man_butt');
+			$("#mlegs").removeClass('ps_man_legs_active').addClass('ps_man_legs');
+			$("#mfeet").removeClass('ps_man_feet_active').addClass('ps_man_feet');
+
+			if(grade1 == 0 && a12 == 0 && a13 == 0 && a14 == 0){
+				$("#pasiheader1").removeClass('pasiheader_selected').addClass('pasiheader');
+			}
+			if(grade2 == 0 && a22 == 0 && a23 == 0 && a24 == 0){
+				$("#pasiheader2").removeClass('pasiheader_selected').addClass('pasiheader');
+			}
+			if(grade3 == 0 && a32 == 0 && a33 == 0 && a34 == 0){
+				$("#pasiheader3").removeClass('pasiheader_selected').addClass('pasiheader');
+			}
+			if(grade4 == 0 && a42 == 0 && a43 == 0 && a44 == 0){
+				$("#pasiheader4").removeClass('pasiheader_selected').addClass('pasiheader');
+			}
+		
+		}
+
+		$("#mhead").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 0 );
+			resetClasses();
+			$("#mhead").addClass('ps_man_head_active');
+			$("#pasiheader1").addClass('pasiheader_selected');
+		});
+
+		$("#mbody").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 1 );
+			resetClasses();
+			$("#mbody").addClass('ps_man_body_active');
+			$("#pasiheader2").addClass('pasiheader_selected');
+		});
+
+		$("#lhand").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 2 );
+			resetClasses();
+			$("#lhand").addClass('ps_man_left_hand_active');
+			$("#rhand").addClass('ps_man_right_hand_active');
+			$("#pasiheader3").addClass('pasiheader_selected');
+		});
+
+		$("#rhand").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 2 );
+			resetClasses();
+			$("#lhand").addClass('ps_man_left_hand_active');
+			$("#rhand").addClass('ps_man_right_hand_active');
+			$("#pasiheader3").addClass('pasiheader_selected');	
+		});
+		
+		$("#mbutt").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 3 );
+			resetClasses();
+			$("#mbutt").addClass('ps_man_butt_active');
+			$("#mlegs").addClass('ps_man_legs_active');
+			$("#mfeet").addClass('ps_man_feet_active');
+			$("#pasiheader4").addClass('pasiheader_selected');
+		});
+
+		$("#mlegs").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 3 );
+			resetClasses();
+			$("#mbutt").addClass('ps_man_butt_active');
+			$("#mlegs").addClass('ps_man_legs_active');
+			$("#mfeet").addClass('ps_man_feet_active');
+			$("#pasiheader4").addClass('pasiheader_selected');
+		});
+
+		$("#mfeet").click(function() {
+			$( "#tabs" ).tabs( "option", "selected", 3 );
+			resetClasses();
+			$("#mbutt").addClass('ps_man_butt_active');
+			$("#mlegs").addClass('ps_man_legs_active');
+			$("#mfeet").addClass('ps_man_feet_active');
+			$("#pasiheader4").addClass('pasiheader_selected');
+		});
+
+		/*tab1*/
+		$('#radios1_1').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount11").val(getTextPercValue($tgt.val()));
+			grade1 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios1_2').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount12").val(getTextValue($tgt.val()));
+			a12 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios1_3').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount13").val(getTextValue($tgt.val()));
+			a13 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios1_4').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount14").val(getTextValue($tgt.val()));
+			a14 = parseInt($tgt.val());
+			calculate();
+		});
+
+		/*tab2*/
+		$('#radios2_1').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount21").val(getTextPercValue($tgt.val()));
+			grade2 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios2_2').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount22").val(getTextValue($tgt.val()));
+			a22 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios2_3').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount23").val(getTextValue($tgt.val()));
+			a23 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios2_4').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount24").val(getTextValue($tgt.val()));
+			a24 = parseInt($tgt.val());
+			calculate();
+		});
+
+		/*tab3*/
+		$('#radios3_1').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount31").val(getTextPercValue($tgt.val()));
+			grade3 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios3_2').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount32").val(getTextValue($tgt.val()));
+			a32 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios3_3').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount33").val(getTextValue($tgt.val()));
+			a33 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios3_4').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount34").val(getTextValue($tgt.val()));
+			a34 = parseInt($tgt.val());
+			calculate();
+		});
+
+		/*tab4*/
+		$('#radios4_1').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount41").val(getTextPercValue($tgt.val()));
+			grade4 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios4_2').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount42").val(getTextValue($tgt.val()));
+			a42 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios4_3').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount43").val(getTextValue($tgt.val()));
+			a43 = parseInt($tgt.val());
+			calculate();
+		});
+		$('#radios4_4').click(function(e) {
+			var $tgt = $(e.target);
+			$("#amount44").val(getTextValue($tgt.val()));
+			a44 = parseInt($tgt.val());
+			calculate();
+		});
+
+		
+		
+		/*init*/
+		$( "#tabs" ).css("display","none");
+		
+		/*tab1*/	
+		$("#amount11").val(getTextPercValue(0));
+		$("#amount12").val(getTextValue(0));
+		$("#amount13").val(getTextValue(0));
+		$("#amount14").val(getTextValue(0));
+		
+		$("#radios1_1").buttonset("refresh");
+		$("#radios1_2").buttonset("refresh");
+		$("#radios1_3").buttonset("refresh");
+		$("#radios1_4").buttonset("refresh");
+
+		/*tab2*/
+		$("#amount21").val(getTextPercValue(0));
+		$("#amount22").val(getTextValue(0));
+		$("#amount23").val(getTextValue(0));
+		$("#amount24").val(getTextValue(0));
+		
+		$("#radios2_1").buttonset("refresh");
+		$("#radios2_2").buttonset("refresh");
+		$("#radios2_3").buttonset("refresh");
+		$("#radios2_4").buttonset("refresh");
+
+		/*tab3*/
+		$("#amount31").val(getTextPercValue(0));
+		$("#amount32").val(getTextValue(0));
+		$("#amount33").val(getTextValue(0));
+		$("#amount34").val(getTextValue(0));
+		
+		$("#radios3_1").buttonset("refresh");
+		$("#radios3_2").buttonset("refresh");
+		$("#radios3_3").buttonset("refresh");
+		$("#radios3_4").buttonset("refresh");
+
+		/*tab4*/
+		$("#amount41").val(getTextPercValue(0));
+		$("#amount42").val(getTextValue(0));
+		$("#amount43").val(getTextValue(0));
+		$("#amount44").val(getTextValue(0));
+		
+		$("#radios4_1").buttonset("refresh");
+		$("#radios4_2").buttonset("refresh");
+		$("#radios4_3").buttonset("refresh");
+		$("#radios4_4").buttonset("refresh");
+
+		var grade1 = 0;
+		var grade2 = 0;
+		var grade3 = 0;
+		var grade4 = 0;
+
+		var a12 = 0; var a13 = 0; var a14 = 0;
+		var a22 = 0; var a23 = 0; var a24 = 0;
+		var a32 = 0; var a33 = 0; var a34 = 0;
+		var a42 = 0; var a43 = 0; var a44 = 0;
+
+		var value_1t_1 = 0;
+		var value_2t_1 = 0;
+		var value_3t_1 = 0;
+		var value_4t_1 = 0;
+
+		var sum = 0;
+
+		
+		
+		calculate();	
+
+			
+
+	});
+
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+		<title>Rheuma Online Rechner CDAI</title>
+		<link rel="shortcut icon" href="../images/favicon.png"/>
+		<link href="../styles/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="../styles/main.css" rel="stylesheet" type="text/css"/>
+		<link href="../styles/jquery-ui-1.8.6.custom.css" rel="stylesheet" type="text/css"/>
+		<link href="../styles/diseases.css" rel="stylesheet" type="text/css"/>	
+	  	<script src="../scripts/jquery-1.4.4.min.js"></script>
+	  	<script src="../scripts/jquery-ui-1.8.6.custom.min.js"></script>
+		<script src="../scripts/jquery.datepick-de-CH.js"></script>
+		<script src="../scripts/vtip.js"></script>
+		<script src="../scripts/roundedCorners.js"></script>
+		<script src="../scripts/jquery.blockUI.js"></script>
+		<script src="../scripts/WebKitDetect.js"></script>
+	</head>
+<body>
+<div id="cdai_elem" style="width: 700px;">
+	<a href="../embed/cdai.html" target="_blank">
+			<img src="../images/button_rheuma.png" alt="rheumatoide arthritis polyarthritis" width="142" height="103" style="float: right;"/>
+	</a>
+		<br />
+		CDAI steht für Clinical Disease Activity Index und ist eine international validierte Messgrösse zur Bestimmung des Schweregrades von rheumatoider Arthritis. Der CDAI ist eine Messgrösse, die von Ärzten und Rheumatologen verwendet wird, um den Schweregrad von Patienten zu bestimmen.
+	<div id="hiddensContainer">
+		<input type="hidden" id="ch0" name="ch0" value="0"/>
+		<input type="hidden" id="ch1" name="ch1" value="0"/>
+		<input type="hidden" id="ch2" name="ch2" value="0"/>
+		<input type="hidden" id="ch3" name="ch3" value="0"/>
+		<input type="hidden" id="ch4" name="ch4" value="0"/>
+		<input type="hidden" id="ch5" name="ch5" value="0"/>
+		<input type="hidden" id="ch6" name="ch6" value="0"/>
+		<input type="hidden" id="ch7" name="ch7" value="0"/>
+		<input type="hidden" id="ch8" name="ch8" value="0"/>
+		<input type="hidden" id="ch9" name="ch9" value="0"/>
+		<input type="hidden" id="ch10" name="ch10" value="0"/>
+		<input type="hidden" id="ch11" name="ch11" value="0"/>
+		<input type="hidden" id="ch12" name="ch12" value="0"/>
+		<input type="hidden" id="ch13" name="ch13" value="0"/>
+		<input type="hidden" id="ch14" name="ch14" value="0"/>
+		<input type="hidden" id="ch15" name="ch15" value="0"/>
+		<input type="hidden" id="ch16" name="ch16" value="0"/>
+		<input type="hidden" id="ch17" name="ch17" value="0"/>
+		<input type="hidden" id="ch18" name="ch18" value="0"/>
+		<input type="hidden" id="ch19" name="ch19" value="0"/>
+		<input type="hidden" id="ch20" name="ch20" value="0"/>
+		<input type="hidden" id="ch21" name="ch21" value="0"/>
+		<input type="hidden" id="ch22" name="ch22" value="0"/>
+		<input type="hidden" id="ch23" name="ch23" value="0"/>
+		<input type="hidden" id="ch24" name="ch24" value="0"/>
+		<input type="hidden" id="ch25" name="ch25" value="0"/>
+		<input type="hidden" id="ch26" name="ch26" value="0"/>
+		<input type="hidden" id="ch27" name="ch27" value="0"/>
+		<input type="hidden" id="ch28" name="ch28" value="0"/>
+		<input type="hidden" id="ch29" name="ch29" value="0"/>
+		<input type="hidden" id="ch30" name="ch30" value="0"/>
+		<input type="hidden" id="ch31" name="ch31" value="0"/>
+		<input type="hidden" id="ch32" name="ch32" value="0"/>
+		<input type="hidden" id="ch33" name="ch33" value="0"/>
+		<input type="hidden" id="ch34" name="ch34" value="0"/>
+		<input type="hidden" id="ch35" name="ch35" value="0"/>
+		<input type="hidden" id="ch36" name="ch36" value="0"/>
+		<input type="hidden" id="ch37" name="ch37" value="0"/>
+		<input type="hidden" id="ch38" name="ch38" value="0"/>
+		<input type="hidden" id="ch39" name="ch39" value="0"/>
+		<input type="hidden" id="ch40" name="ch40" value="0"/>
+		<input type="hidden" id="ch41" name="ch41" value="0"/>
+		<input type="hidden" id="ch42" name="ch42" value="0"/>
+		<input type="hidden" id="ch43" name="ch43" value="0"/>
+		<input type="hidden" id="ch44" name="ch44" value="0"/>
+		<input type="hidden" id="ch45" name="ch45" value="0"/>
+		<input type="hidden" id="ch46" name="ch46" value="0"/>
+		<input type="hidden" id="ch47" name="ch47" value="0"/>
+		<input type="hidden" id="ch48" name="ch48" value="0"/>
+		<input type="hidden" id="ch49" name="ch49" value="0"/>
+		<input type="hidden" id="ch50" name="ch50" value="0"/>
+		<input type="hidden" id="ch51" name="ch51" value="0"/>
+		<input type="hidden" id="ch52" name="ch52" value="0"/>
+		<input type="hidden" id="ch53" name="ch53" value="0"/>
+		<input type="hidden" id="ch54" name="ch54" value="0"/>
+		<input type="hidden" id="ch55" name="ch55" value="0"/>
+		
+	</div>
+	<table width="680" border="0" class="rheumaMainTable">
+		<tbody>
+			<tr>
+				<td align="center">
+					<br />
+					<div>
+						<label>
+							1. Bitte tippen Sie auf die geschwollenen Gelenke.
+						</label>
+					</div>
+				</td>
+			  	<td align="center">
+			  		<br />
+			  		<div>
+			  			<label>
+			  				2. Bitte tippen Sie auf die druckempfindlichen Gelenke.
+			  			</label>
+			  		</div>
+			  	</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="rheumaMan">
+						<tbody>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/headright.png" usemap="#h1manxrheumaxheadrightxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxheadrightxpng-manmap">
+											<area shape="circle" coords="89,99,37" id="vis-ch0" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,176" id="fis-ch0" href="" class="visualClickRect"/>
+										</map>
+										<span id="h1manxrheumaxheadrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/headleft.png" usemap="#h1manxrheumaxheadleftxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxheadleftxpng-manmap">
+											<area shape="circle" coords="27,99,37" id="vis-ch1" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,176" id="fis-ch1" href="" class="visualClickRect"/>
+										</map>
+										<span id="h1manxrheumaxheadleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/armright.png" usemap="#h1manxrheumaxarmrightxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxarmrightxpng-manmap">
+											<area shape="circle" coords="64,22,37" id="vis-ch2" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,82" id="fis-ch2" href="" class="visualClickRect"/>
+										</map>
+										<span id="h1manxrheumaxarmrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/armleft.png" usemap="#h1manxrheumaxarmleftxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxarmleftxpng-manmap">
+											<area shape="circle" coords="52,22,37" id="vis-ch3" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,82" id="fis-ch3" href="" class="visualClickRect"/>
+										</map>
+										<span id="h1manxrheumaxarmleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/handright.png" usemap="#h1manxrheumaxhandrightxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxhandrightxpng-manmap">
+											<area shape="circle" coords="35.5,3.5,27" id="zis-ch6" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="16.5,25.5,7" id="zis-ch7" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="24.5,21.5,7" id="zis-ch8" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="17.5,38.5,7" id="zis-ch9" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="23.5,31.5,7" id="zis-ch10" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="23.5,45.5,7" id="zis-ch11" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="28.5,36.5,7" id="zis-ch12" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="31.5,49.5,7" id="zis-ch13" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="34.5,39.5,7" id="zis-ch14" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="40.5,49.5,7" id="zis-ch15" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="41.5,41.5,7" id="zis-ch16" href="#h1righthandimg" class="visualClickZoom"/>
+											<area shape="rect" coords="0, 0, 160, 82 " href="#h1righthandimg" class="visualClickZoom"/>
+										</map>
+										<span id="h1manxrheumaxhandrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/handleft.png" usemap="#h1manxrheumaxhandleftxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxhandleftxpng-manmap">
+									
+											<area shape="circle" coords="94.5,3.5,27" id="zis-ch17" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="134.5,25.5,7" id="zis-ch18" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="126.5,21.5,7" id="zis-ch19" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="134.5,38.5,7" id="zis-ch20" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="127.5,31.5,7" id="zis-ch21" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="128.5,45.5,7" id="zis-ch22" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="122.5,35.5,7" id="zis-ch23" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="120.5,48.5,7" id="zis-ch24" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="116.5,39.5,7" id="zis-ch25" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="111.5,50.5,7" id="zis-ch26" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="109.5,40.5,7" id="zis-ch27" href="#h1lefthandimg" class="visualClickZoom"/>
+											<area shape="rect" coords="0, 0, 160, 82 " href="#h1lefthandimg" class="visualClickZoom"/>
+										</map>
+										<span id="h1manxrheumaxhandleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/legright.png" usemap="#h1manxrheumaxlegrightxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxlegrightxpng-manmap">
+											<area shape="circle" coords="101,48,37" id="vis-ch4" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,224" id="fis-ch4" href="" class="visualClickRect"/>
+										</map>
+										<span id="h1manxrheumaxlegrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/legleft.png" usemap="#h1manxrheumaxlegleftxpng-manmap" class="relativePos"/> 
+										<map name="h1manxrheumaxlegleftxpng-manmap">
+											<area shape="circle" coords="15,48,37" id="vis-ch5" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,224" id="fis-ch5" href="" class="visualClickRect"/>		
+										</map>
+										<span id="h1manxrheumaxlegleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="h1righthandimg" style="display:none; text-align: center; width: 580px;" class="closeZoomEsc">
+						<br />
+						<h4>Ansicht von vorne</h4>
+						<br />
+						Bitte tippen Sie auf den zutreffenden Bereich.
+						<br />
+						<br />
+						<div class="relativePos" style="margin:auto;width: 528px;">
+							<img src="../images/man/rheuma/handright_big.png" usemap="#h1manxrheumaxhandright_bigxpng-manmap" class="relativePos"/> 
+							<map name="h1manxrheumaxhandright_bigxpng-manmap">
+								<area shape="circle" coords="220,25,164" id="vis-ch6" href="" class="visualClick"/>
+								<area shape="circle" coords="103,159,41" id="vis-ch7" href="" class="visualClick"/>
+								<area shape="circle" coords="148,134,41" id="vis-ch8" href="" class="visualClick"/>
+								<area shape="circle" coords="106,237,41" id="vis-ch9" href="" class="visualClick"/>
+								<area shape="circle" coords="146,193,41" id="vis-ch10" href="" class="visualClick"/>
+								<area shape="circle" coords="144,275,41" id="vis-ch11" href="" class="visualClick"/>
+								<area shape="circle" coords="177,220,41" id="vis-ch12" href="" class="visualClick"/>
+								<area shape="circle" coords="190,298,41" id="vis-ch13" href="" class="visualClick"/>
+								<area shape="circle" coords="213,242,41" id="vis-ch14" href="" class="visualClick"/>
+								<area shape="circle" coords="243,303,41" id="vis-ch15" href="" class="visualClick"/>
+								<area shape="circle" coords="253,252,41" id="vis-ch16" href="" class="visualClick"/>
+							</map>
+							<span id="h1manxrheumaxhandright_bigxpng-holder"></span>
+						</div>
+						<table>
+							<tbody>
+								<tr>
+									<td style="text-align: right;width: 220px;">
+										<img src="../images/man/rheuma/redbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Geschwollene Gelenke
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;">
+										<img src="../images/man/rheuma/clearbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Nicht geschwollene Gelenke
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br />
+						<img src="../images/man/rheuma/backbutton.png" class="closeZoom" style="vertical-align: middle;"/>
+						<br />
+						<span class="closeZoom"> Speichern und zurück</span>
+						<br />
+						<br />
+					</div>
+					<div id="h1lefthandimg" style="display:none; text-align: center; width: 580px;" class="closeZoomEsc">
+						<br />
+						<h4>Ansicht von vorne</h4>
+						<br />
+						Bitte tippen Sie auf den zutreffenden Bereich.
+						<br />
+						<br />
+						<div class="relativePos" style="margin:auto;width: 528px;">
+							<img src="../images/man/rheuma/handleft_big.png" usemap="#h1manxrheumaxhandleft_bigxpng-manmap" class="relativePos"/> 
+							<map name="h1manxrheumaxhandleft_bigxpng-manmap">
+								<area shape="circle" coords="145,25,164" id="vis-ch17" href="" class="visualClick"/>
+								<area shape="circle" coords="379,158,41" id="vis-ch18" href="" class="visualClick"/>
+								<area shape="circle" coords="333,132,41" id="vis-ch19" href="" class="visualClick"/>
+								<area shape="circle" coords="379,237,41" id="vis-ch20" href="" class="visualClick"/>
+								<area shape="circle" coords="340,192,41" id="vis-ch21" href="" class="visualClick"/>
+								<area shape="circle" coords="343,277,41" id="vis-ch22" href="" class="visualClick"/>
+								<area shape="circle" coords="309,219,41" id="vis-ch23" href="" class="visualClick"/>
+								<area shape="circle" coords="296,296,41" id="vis-ch24" href="" class="visualClick"/>
+								<area shape="circle" coords="273,241,41" id="vis-ch25" href="" class="visualClick"/>
+								<area shape="circle" coords="244,309,41" id="vis-ch26" href="" class="visualClick"/>
+								<area shape="circle" coords="232,248,41" id="vis-ch27" href="" class="visualClick"/>
+							</map>
+							<span id="h1manxrheumaxhandleft_bigxpng-holder"></span>
+						</div>
+						<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="text-align: right;width: 220px;">
+										<img src="../images/man/rheuma/redbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Geschwollene Gelenke
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;">
+										<img src="../images/man/rheuma/clearbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Nicht geschwollene Gelenke
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br />
+						<img src="../images/man/rheuma/backbutton.png" class="closeZoom" style="vertical-align: middle;"/>
+						<br />
+						<span class="closeZoom"> Speichern und zurück</span>
+						<br />
+						<br />
+					</div>
+				</td>
+				<td>
+					<table class="rheumaMan">
+						<tbody>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/headright.png" usemap="#h2manxrheumaxheadrightxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxheadrightxpng-manmap">
+											<area shape="circle" coords="89,99,37" id="vis-ch28" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,176" id="fis-ch28" href="" class="visualClickRect"/>	
+										</map>
+										<span id="h2manxrheumaxheadrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/headleft.png" usemap="#h2manxrheumaxheadleftxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxheadleftxpng-manmap">
+											<area shape="circle" coords="27,99,37" id="vis-ch29" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,176" id="fis-ch29" href="" class="visualClickRect"/>
+										</map>
+										<span id="h2manxrheumaxheadleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/armright.png" usemap="#h2manxrheumaxarmrightxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxarmrightxpng-manmap">
+											<area shape="circle" coords="64,22,37" id="vis-ch30" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,82" id="fis-ch30" href="" class="visualClickRect"/>	
+										</map>
+										<span id="h2manxrheumaxarmrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/armleft.png" usemap="#h2manxrheumaxarmleftxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxarmleftxpng-manmap">
+											<area shape="circle" coords="52,22,37" id="vis-ch31" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,82" id="fis-ch31" href="" class="visualClickRect"/>
+										</map>
+										<span id="h2manxrheumaxarmleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/handright.png" usemap="#h2manxrheumaxhandrightxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxhandrightxpng-manmap">
+											<area shape="circle" coords="35.5,3.5,27" id="zis-ch34" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="16.5,25.5,7" id="zis-ch35" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="24.5,21.5,7" id="zis-ch36" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="17.5,38.5,7" id="zis-ch37" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="23.5,31.5,7" id="zis-ch38" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="23.5,45.5,7" id="zis-ch39" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="28.5,36.5,7" id="zis-ch40" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="31.5,49.5,7" id="zis-ch41" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="34.5,39.5,7" id="zis-ch42" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="40.5,49.5,7" id="zis-ch43" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="41.5,41.5,7" id="zis-ch44" href="#h2righthandimg" class="visualClickZoom"/>
+											<area shape="rect" coords="0, 0, 160, 82 " href="#h2righthandimg" class="visualClickZoom"/>	
+										</map>
+										<span id="h2manxrheumaxhandrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/handleft.png" usemap="#h2manxrheumaxhandleftxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxhandleftxpng-manmap">
+											<area shape="circle" coords="94.5,3.5,27" id="zis-ch45" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="134.5,25.5,7" id="zis-ch46" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="126.5,21.5,7" id="zis-ch47" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="134.5,38.5,7" id="zis-ch48" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="127.5,31.5,7" id="zis-ch49" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="128.5,45.5,7" id="zis-ch50" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="122.5,35.5,7" id="zis-ch51" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="120.5,48.5,7" id="zis-ch52" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="116.5,39.5,7" id="zis-ch53" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="111.5,50.5,7" id="zis-ch54" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="circle" coords="109.5,40.5,7" id="zis-ch55" href="#h2lefthandimg" class="visualClickZoom"/>
+											<area shape="rect" coords="0, 0, 160, 82 " href="#h2lefthandimg" class="visualClickZoom"/>
+										</map>
+										<span id="h2manxrheumaxhandleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/legright.png" usemap="#h2manxrheumaxlegrightxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxlegrightxpng-manmap">	
+											<area shape="circle" coords="101,48,37" id="vis-ch32" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,224" id="fis-ch32" href="" class="visualClickRect"/>
+										</map>
+										<span id="h2manxrheumaxlegrightxpng-holder"></span>
+									</div>
+								</td>
+								<td style="width: 2px">
+								</td>
+								<td>
+									<div class="relativePos">
+										<img src="../images/man/rheuma/legleft.png" usemap="#h2manxrheumaxlegleftxpng-manmap" class="relativePos"/> 
+										<map name="h2manxrheumaxlegleftxpng-manmap">
+											<area shape="circle" coords="15,48,37" id="vis-ch33" href="" class="visualClick"/>
+											<area shape="rect" coords="0,0,160,224" id="fis-ch33" href="" class="visualClickRect"/>
+										</map>
+										<span id="h2manxrheumaxlegleftxpng-holder"></span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="h2righthandimg" style="display:none; text-align: center; width: 580px;" class="closeZoomEsc">
+						<br />
+						<h4>Ansicht von vorne</h4>
+						<br />
+						Bitte tippen Sie auf den zutreffenden Bereich.
+						<br />
+						<br />
+						<div class="relativePos" style="margin:auto;width: 528px;">
+							<img src="../images/man/rheuma/handright_big.png" usemap="#h2manxrheumaxhandright_bigxpng-manmap" class="relativePos"/> 
+							<map name="h2manxrheumaxhandright_bigxpng-manmap">
+								<area shape="circle" coords="218,24,164" id="vis-ch34" href="" class="visualClick"/>
+								<area shape="circle" coords="103,159,41" id="vis-ch35" href="" class="visualClick"/>
+								<area shape="circle" coords="148,134,41" id="vis-ch36" href="" class="visualClick"/>
+								<area shape="circle" coords="106,237,41" id="vis-ch37" href="" class="visualClick"/>
+								<area shape="circle" coords="146,193,41" id="vis-ch38" href="" class="visualClick"/>
+								<area shape="circle" coords="144,275,41" id="vis-ch39" href="" class="visualClick"/>
+								<area shape="circle" coords="177,220,41" id="vis-ch40" href="" class="visualClick"/>
+								<area shape="circle" coords="190,298,41" id="vis-ch41" href="" class="visualClick"/>
+								<area shape="circle" coords="213,242,41" id="vis-ch42" href="" class="visualClick"/>
+								<area shape="circle" coords="243,303,41" id="vis-ch43" href="" class="visualClick"/>
+								<area shape="circle" coords="253,252,41" id="vis-ch44" href="" class="visualClick"/>
+							</map>
+							<span id="h2manxrheumaxhandright_bigxpng-holder"></span>
+						</div>
+						<table>
+							<tbody>
+								<tr>
+									<td style="text-align: right;width: 220px;">
+										<img src="../images/man/rheuma/redbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Geschwollene Gelenke
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;">
+										<img src="../images/man/rheuma/clearbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Nicht geschwollene Gelenke
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br />
+						<img src="../images/man/rheuma/backbutton.png" class="closeZoom" style="vertical-align: middle;"/>
+						<br />
+						<span class="closeZoom"> Speichern und zurück</span>
+						<br />
+						<br />
+					</div>
+					<div id="h2lefthandimg" style="display:none; text-align: center; width: 580px;" class="closeZoomEsc">
+						<br />
+						<h4>Ansicht von vorne</h4>
+						<br />
+						Bitte tippen Sie auf den zutreffenden Bereich.
+						<br />
+						<br />
+						<div class="relativePos" style="margin:auto;width: 528px;">
+							<img src="../images/man/rheuma/handleft_big.png" usemap="#h2manxrheumaxhandleft_bigxpng-manmap" class="relativePos"/> 
+							<map name="h2manxrheumaxhandleft_bigxpng-manmap">
+								<area shape="circle" coords="143,24,164" id="vis-ch45" href="" class="visualClick"/>
+								<area shape="circle" coords="379,158,41" id="vis-ch46" href="" class="visualClick"/>
+								<area shape="circle" coords="333,132,41" id="vis-ch47" href="" class="visualClick"/>
+								<area shape="circle" coords="379,237,41" id="vis-ch48" href="" class="visualClick"/>
+								<area shape="circle" coords="340,190,41" id="vis-ch49" href="" class="visualClick"/>
+								<area shape="circle" coords="343,277,41" id="vis-ch50" href="" class="visualClick"/>
+								<area shape="circle" coords="309,219,41" id="vis-ch51" href="" class="visualClick"/>
+								<area shape="circle" coords="296,296,41" id="vis-ch52" href="" class="visualClick"/>
+								<area shape="circle" coords="273,241,41" id="vis-ch53" href="" class="visualClick"/>
+								<area shape="circle" coords="244,309,41" id="vis-ch54" href="" class="visualClick"/>
+								<area shape="circle" coords="232,248,41" id="vis-ch55" href="" class="visualClick"/>
+							</map>
+							<span id="h2manxrheumaxhandleft_bigxpng-holder"></span>
+						</div>
+						<table>
+							<tbody>
+								<tr>
+									<td style="text-align: right; width: 220px;">
+										<img src="../images/man/rheuma/redbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Geschwollene Gelenke
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;">
+										<img src="../images/man/rheuma/clearbutton.png"/>
+									</td>
+									<td style="text-align: left;">
+										Nicht geschwollene Gelenke
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br />
+						<img src="../images/man/rheuma/backbutton.png" class="closeZoom" style="vertical-align: middle;"/>
+						<br />
+						<span class="closeZoom">Speichern und zurück</span>
+						<br />
+						<br />
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="680" border="0">
+		<tbody>
+			<tr>
+				<td colspan="3">
+					<br />
+					<div >
+						<label>
+							3. Bitte bewerten Sie den derzeitigen allgemeinen Gesundheitszustand.
+						</label>
+					</div>
+					<br />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div>
+						<input type="text" id="amount" style="text-align:center; width:640px; border:0; color:#000; font-size:18px; font-weight:bold;" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 114px; text-align: center; vertical-align: top;">
+					<div class="smilepositive"></div>
+				</td>
+				<td style="width: 412px;">
+					<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+				</td>
+				<td style="width: 114px; text-align: center; vertical-align: top;">
+					<div class="smilenegative"></div>
+					<br />
+				</td>
+			</tr>
+			<tr>
+				<td>	
+					<br />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div>
+						<label>
+							4. Bitte geben Sie die Blutsenkungsgeschwindigkeit (BSG) nach Westergren in mm/h an.
+						</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="height: 53px;">
+					<div>
+						<input type="text" id="bsg_amount" style="text-align:center; width:640px; border:0; color:#000; font-size:18px; font-weight:bold;" />
+					</div>
+				</td>
+			</tr>			
+			<tr>
+				<td style="width: 114px; text-align: center; vertical-align: top;">
+					<div></div>
+				</td>
+				<td style="width: 412px;">
+					<div id="bsg_slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+				</td>
+				<td style="width: 114px; text-align: center; vertical-align: top;">
+					<div></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<br />
+					<br />
+				</td>
+			</tr>
+		</tbody>
+	</table>	
+	<table style="width: 640px; border:0;">
+		<tbody>
+			<tr>
+				<td>
+			</td>
+			</tr>
+			<tr>	
+				<td style="width: 160px; text-align: left; vertical-align: center;">
+					Der <strong>CDAI</strong> Wert beträgt:
+				</td>
+				<td style="width: 480px; text-align: left; vertical-align: center;">
+					<input type="text" id="cdai" style="width: 100px; height: 50px; text-align:center; border:solid 1px #000; color:#000; font-size:24px; font-weight:bold;" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="width: 160px; height:98px; text-align: left; vertical-align: center;">Der CDAI Wert ist die Summe aus der Anzahl der geschwollenen Gelenke (max. 28) + Anzahl der druckempfindlichen Gelenke (max. 28) + Wert der Blutsenkungsgeschwindigkeit (BSG - max. 10) + Wert auf der Visual Analog Skala (VAS - max. 10). Maximale Punktezahl beträgt 76. Konsultieren Sie  Ihren Rheumatologen für spezifischere Informationen.</td>
+		  	</tr>
+		</tbody>
+	</table>
+</div>	
+<script>
+	var idx = 0;
+	$(function() {
+
+		$('input:radio').attr("disabled", "disabled");
+		$('input:checkbox').attr("disabled", "disabled");
+		$('input:text').attr("disabled", "disabled");
+
+		//create hidden fields from maps
+		var hiddens="";
+		$('area[id^="vis-"]').each(function (index, domEle) {
+			//var hid = this.id.substring(4);
+			var old_id = $(domEle).attr('id');
+			var new_id = old_id.substring(0, 4)+"ch"+index;
+			$(domEle).attr('id', new_id); 	
+			var hid = this.id.substring(4);
+			var str = '<input type="hidden" id="'+ hid + '" name="'+ hid +'" value="0"/>';
+			hiddens += str;
+		});
+
+		$('area[id^="zis-"]').each(function (index, domEle) {
+			var new_index = index+6;
+			if(new_index>27){
+				new_index+=6;
+			}
+			var old_id = $(domEle).attr('id');
+			var new_id = old_id.substring(0, 4)+"ch"+new_index;
+			$(domEle).attr('id', new_id); 
+		});
+		
+		//$("#hiddensContainer").append(hiddens);
+
+		//recalculate circles and store original
+		var circles = {};
+		$("area[id^='vis-'], area[id^='zis-']").each(function() {
+			var all = $(this).attr("coords");
+			circles[this.id] = all;
+			
+			var coords = all.split(",");
+	       	var x =  parseInt(coords[0]);
+	       	var y =  parseInt(coords[1]);
+	       	var d =  parseInt(coords[2]);
+	       	x += d/2;
+	       	y += d/2;
+	       	d /= 2;
+	       	$(this).attr("coords","" + x + "," + y +"," + d);
+		});
+
+		/////////////////////////
+		var imgUrl = "../images/man/red_points/red_XXXXX.png";
+		
+		function getImgId(superid) {
+			var imgid = superid.replace("vis-","img-").replace("zis-","zmg-");
+			return imgid;
+		}
+		
+		function getImgClass(superid) {
+			if(superid.substring(0,4)=="zis-") {
+				return "visualClickZoom";
+			}
+			return "visualClickRed";
+		}
+
+		function redrawImages() {
+			
+			$('span[id$="-holder"]').empty();
+			$("area[id^='vis-'], area[id^='zis-']").each( 
+			    function() {
+			    	if($("#" + this.id.substring(4)).val()!="1") {
+			    		return;
+			    	}
+			       	//create image
+			       	var coords = circles[this.id].split(",");
+			       	var x =  parseInt(coords[0]);
+			       	var y =  parseInt(coords[1]);
+			       	var d =  parseInt(coords[2]);
+
+			       	var str = "<img src='" + imgUrl.replace("XXXXX",""+d) + "' class='" + getImgClass(this.id) + "' style='left: " + x + "px; top: " + y + "px;' id='" + getImgId(this.id) + "' />";
+			     	
+				    $(this).parent().next().append(str);			
+			      	
+			    } 
+			);
+		}
+		
+		function animate(superid, up) {
+			if(superid.substring(0, 4)=="img-"){
+				superid = "vis-" + superid.substring(4);
+			}
+			if(superid.substring(0, 4)=="zmg-"){
+				superid = "zis-" + superid.substring(4);
+			}
+			var coords = circles[superid].split(",");
+	       	var x =  parseInt(coords[0]);
+	       	var y =  parseInt(coords[1]);
+	       	var d =  parseInt(coords[2]);
+
+	       	var imgid= getImgId(superid);
+	       	$("#" + imgid).remove(); //if exists
+
+	       	//load image
+	       	var startx,starty,startd,endx,endy,endd;
+	       	if(up){
+	       		endx=x;
+	       		endy=y;
+	       		endd=d;
+	       		
+	       		startx = x + d/2+2;
+	       		starty = y + d/2+2;
+	       		startd = 1;
+	       	}else{
+	       		startx = x;
+	       		starty = y;
+	       		startd = d;
+	       		
+	       		endx = x + d/2+2;
+	       		endy = y + d/2+2;
+	       		endd = 1;
+	       	}
+	       	
+	       	var str = "<img src='" + imgUrl.replace("XXXXX","37") + "' class='" + getImgClass(superid) + "' style='left: " + startx + "px; top: " + starty + "px; width:" + startd + "px' id='" + imgid + "'/>";
+	     	 $("#" + superid).parent().next().append(str);
+
+	       	//animate image to the destination
+	       	$("#" + imgid).animate({
+	       		top: endy,
+	       		left: endx,
+	       		width: endd
+	       	}, 100, "linear", function(){redrawImages();} );
+		}
+		
+		redrawImages();
+
+		function clickImage(superid) {
+			var hiddenid ="#" + superid.substring(4);
+			var up = false;
+			if($(hiddenid).val()=="1") {
+				$(hiddenid).val("0");
+			}else{
+				$(hiddenid).val("1");
+				up = true;
+			}
+			calculate();
+			//animate(superid, up);
+			redrawImages();
+			return false;
+		}
+		
+		//click on image map
+		$(".visualClick").click(function() {
+			return clickImage(this.id);
+		});
+
+		$(".visualClickRect").click(function() {
+			return clickImage(this.id.replace("fis-","vis-"));
+		});
+		
+		//click on red circle
+		$('.visualClickRed').live('click', function() {
+			return clickImage(this.id);			
+		});
+		
+		//zoom
+		$(".visualClickZoom").live('click', function(){
+			if($(this).attr("href")!=null) {
+				item = "#" + $(this).attr("href").substring(1);
+			}else{
+				//red image
+				item = "#" + $(this).parent().prev().children().first().attr("href").substring(1);
+			}
+			//$('#cdai_elem').block({ 
+			$.blockUI({
+				message: $(item), 
+				// disable horz centering 
+	            centerX: false, 
+	            // disable vertical centering 
+	            centerY: false, 
+	            // apply css props as desired 
+	            css: { top: '60px', left: '60px' } 
+			});
+			return false;
+		});
+
+		$(".closeZoom").click(function(){
+			$.unblockUI(); 
+			$(document).unbind('keypress');
+			return false;
+		});
+
+		//smiley slider
+		$( "#slider" ).slider({
+			value: 0,
+			min: 0,
+			max: 100,
+			step: 0,
+			slide: function( event, ui ) {
+				$( "#amount" ).val(ui.value +"%");
+				calculate();
+			}
+		});
+		$( "#amount" ).val($( "#slider" ).slider( "value" ) +"%" );
+					
+		//smiley slider
+		$( "#bsg_slider" ).slider({
+			value: 0,
+			min: 0,
+			max: 100,
+			step: 0,
+			slide: function( event, ui ) {
+				$( "#bsg_amount" ).val(ui.value);
+				calculate();
+			}
+		});
+		$( "#bsg_amount" ).val($( "#bsg_slider" ).slider( "value" ));
+		calculate();
+
+		function calculate() {
+			var value1 = $('input[id^="ch"][value="1"]').size();
+			var value2 = (parseInt($("#amount").val()))/10;
+			var valueBsg = (parseInt($("#bsg_amount").val()))/10;
+			var value3 = (value1 + value2 + valueBsg);
+			$( "#cdai" ).val(value3.toFixed(1));
+		}
+	});
+</script>
+</body>
+</html>

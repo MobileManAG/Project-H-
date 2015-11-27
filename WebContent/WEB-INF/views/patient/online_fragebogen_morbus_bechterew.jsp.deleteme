@@ -1,0 +1,670 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/taglibs.inc" %>
+<m:patientMasterMenu>
+	<t:img src="onlinefragebogen_titel.png" alt="" width="640" height="32" />
+	<br />
+	<br />
+      Gesundheitsgruppe: Chronische Entz&uuml;ndungen an der Wirbels&auml;ule oder Morbus Bechterew<br />
+	<br />
+	<table width="640" border="0">
+		<tr bgcolor="71ab57">
+			<td height="17" colspan="4" bgcolor="#71ab57" style="border: 1px solid #a9aeb1;"><font color="#FFFFFF"><strong>Einmalige Abfrage (wird nur das erste Mal
+			abgefragt)</strong></font></td>
+		</tr>
+		<tr>
+			<td width="157"><strong>Jahrgang</strong></td>
+			<td colspan="3"><input type="text" name="textfield3" /></td>
+		</tr>
+		<tr>
+			<td><strong>Geschlecht</strong></td>
+			<td colspan="3">Mann <input type="radio" name="radiobutton" value="radiobutton" /> Frau <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td height="33"><strong>Gr&ouml;sse</strong></td>
+			<td colspan="3"><input type="text" name="textfield5" /></td>
+		</tr>
+		<tr>
+			<td height="31"><strong>Gewicht</strong></td>
+			<td colspan="3"><input type="text" name="textfield6" /></td>
+		</tr>
+		<tr>
+			<td height="27"><strong>Risikoverhalten</strong></td>
+			<td colspan="3">Bitte geben Sie die Anzahl Zigaretten oder Pfeife an, die Sie t&auml;glich rauchen?<br />
+			<br />
+			<label for="select"></label> <select name="select" id="select">
+				<option>Machen Sie bitte Ihre Angabe</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="2 PACKUNGEN">2 PACKUNGEN</option>
+				<option value="3 PACKUNGEN ODER MEHR">3 PACKUNGEN ODER MEHR</option>
+			</select> <br />
+			<br />
+			<table width="100%">
+				<tr>
+					<td width="21%">Konsumieren Sie regelm&auml;ssig Alkohol?</td>
+					<td width="79%"><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+					<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+				</tr>
+			</table>
+			<br />
+			</td>
+		</tr>
+		<tr>
+			<td height="35"><strong>Weitere Erkrankungen</strong></td>
+			<td colspan="3">Welche weiteren Co-Morbidit&auml;ten (Erkrankungen) haben Sie?<br />
+			<table width="100%">
+				<tr>
+					<td width="41%">Entz&uuml;ndungen des Darm (IBD, Morbus Crohn)</td>
+					<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+					<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+				</tr>
+				<tr>
+					<td>Entz&uuml;ndungen der Augen (Uveitis)</td>
+					<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+					<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+				</tr>
+				<tr>
+					<td>Weitere Erkrankungen</td>
+					<td><input type="text" name="textfield7" /></td>
+				</tr>
+			</table>
+			<br />
+			</td>
+		</tr>
+		<tr>
+			<td height="34"><strong>Regelm&auml;ssige Medikation</strong></td>
+			<td colspan="3">Welche Medikamente nehmen Sie zur Zeit an?<br />
+			<br />
+			<table width="100%">
+				<tr>
+					<td>Schmerzmittel</td>
+					<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+					<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+				</tr>
+				<tr>
+					<td>Andere</td>
+					<td><input name="textfield8" type="text" value="Medikamentenname" /></td>
+				</tr>
+			</table>
+			<br />
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Datum erste Symptome</strong></td>
+			<td colspan="3"><input name="textfield4" type="text" value="00/00/0000" /></td>
+		</tr>
+		<tr>
+			<td><strong>Datum Diagnose</strong></td>
+			<td colspan="3"><input name="textfield42" type="text" value="00/00/0000" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="3">&nbsp;</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 1: M&uuml;digkeit / Ersch&ouml;pfung</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Wie w&uuml;rden Sie Ihre allgemeine M&uuml;digkeit und Ersch&ouml;pfung beschreiben?</td>
+			<td width="496">
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Keine M&uuml;digkeit/<br />
+					Ersch&ouml;pfung</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Sehr starke M&uuml;digkeit / Ersch&ouml;pfung</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 2: Schmerzen</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Wie stark waren ihre Schmerzen in Nacken, R&uuml;cken oder H&uuml;fte?</td>
+			<td>
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Keine Schmerzen</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Sehr starke Schmerzen</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 3: Schmerzen oder Schwellungen</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Wie stark waren Ihre Schmerzen oder Schwellungen an anderen Gelenken?</td>
+			<td>
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Keine Schmerzen</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Sehr starke Schmerzen</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 4: Ber&uuml;hrungs- oder Druckempfindliche K&ouml;rperstellen</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Wie unangenehm waren f&uuml;r Sie ber&uuml;hrungs- oder druckempfindliche K&ouml;rperstellen?</td>
+			<td>
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Gar nicht</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Sehr stark</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 5: Morgensteifigkeit</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Wie ausgepr&auml;gt war Ihre Morgensteifigkeit nach dem aufwachen?</td>
+			<td>
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Gar nicht</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Sehr stark</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">(verbundene Frage)</td>
+			<td>Wenn ja, wie lange dauerte diese Morgensteifigkeit im Allgemeinen?<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> keine Angabe<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> weniger als 30 Minuten<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> 30 Minuten bis 1 Stunde<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> 1 bis 2 Stunden<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> 2 bis 4 Stunden<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> mehr als 4 Stunden<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> den ganzen Tag<br />
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 6: K&ouml;rperliche T&auml;tigkeiten</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Konnten Sie k&ouml;rperlich anstrengende T&auml;tigkeiten verrichten (z. B. krankengymnastische Uebungen, Gartenarbeit oder Sport)?</td>
+			<td>
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Einfach</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Unm&ouml;glich</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 7: Aktiv</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="3">Konnten Sie zuhause oder bei der Arbeit den ganzen Tag aktiv sein?</td>
+			<td>
+			<table width="100%">
+				<tr>
+					<td rowspan="2" align="center">Einfach</td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td align="center"><input type="radio" name="radiobutton" value="radiobutton" /></td>
+					<td rowspan="2" align="center">Unm&ouml;glich</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td align="center">2</td>
+					<td align="center">3</td>
+					<td align="center">4</td>
+					<td align="center">5</td>
+					<td align="center">6</td>
+					<td align="center">7</td>
+					<td align="center">8</td>
+					<td align="center">9</td>
+					<td align="center">10</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 8: Selbst&auml;ndigkeit </strong></font></td>
+		</tr>
+		<tr>
+			<td height="149" colspan="3">Konnten Sie f&uuml;r sich selbst sorgen?</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ich habe keine Probleme f&uuml;r mich selbst zu sorgen<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Ich habe einige Probleme, mich selbst zu waschen oder anzuziehen<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen<br />
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 9: Allgemeine T&auml;tigkeiten (Arbeitsproduktivit&auml;t)</strong></font></td>
+		</tr>
+		<tr>
+			<td height="149" colspan="3">Konnten Sie Ihren T&auml;tigkeiten nachgehen (Arbeit, Studium, Hausarbeit, Familien- oder Freizeitaktivit&auml;ten)</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ich habe keine Probleme, meinen allt&auml;glichen T&auml;tigkeiten nachzugehen<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Ich habe einige Probleme, meinen allt&auml;glichen T&auml;tigkeiten nachzugehen<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Ich bin nicht in der Lage, meinen allt&auml;glichen T&auml;tigkeiten nachzugehen<br />
+			</td>
+		</tr>
+		<tr>
+			<td height="50" colspan="3">Mussten Sie Ihrer Arbeitsstelle aufgrund Ihrer Erkrankung in den letzten 7 Tagen fern bleiben?</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 10: Psychologisches Befinden</strong></font></td>
+		</tr>
+		<tr>
+			<td colspan="4">Bitte beantworten Sie jede Zeile mit &quot;Ja&quot; oder &quot;Nein. Ich f&uuml;hle mich heute...</td>
+		</tr>
+		<tr>
+			<td colspan="3">Aufgrund meiner Erkrankung bin ich oft niedergeschlagen.</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr>
+			<td colspan="3">Ich habe Angst, die Erwartungen anderer an mich nicht erf&uuml;llen zu k&ouml;nnen.</td>
+			<td>Ja <input type="radio" name="radiobutton" value="radiobutton" /> Nein <input type="radio" name="radiobutton" value="radiobutton" /></td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 11: Augen</strong></font></td>
+		</tr>
+		<tr>
+			<td height="149" colspan="3">Hatten Sie in der letzten Woche entz&uuml;dendete Augen?</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> keine Angabe<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Leicht<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Mittel<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Schwer<br />
+			</td>
+		</tr>
+		<tr>
+			<td height="149" colspan="3">Hatten Sie deswegen einen Arzt konsultiert?<br />
+			(verbundene Frage mit vorher)!!!</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein<br />
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 12: Magen Darm</strong></font></td>
+		</tr>
+		<tr>
+			<td height="149" colspan="3">Hatten Sie in der letzten Woche Probleme im Magen Darm Bereich?</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> keine Angabe<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Leicht<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Mittel<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Schwer<br />
+			</td>
+		</tr>
+		<tr>
+			<td height="146" colspan="3">Hatten Sie deswegen einen Arzt konsultiert?<br />
+			(verbundene Frage mit vorher)!!!</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein<br />
+			</td>
+		</tr>
+		<tr bgcolor="5093c1">
+			<td colspan="4"><font color="#000000"><strong>Frage 13: Haut</strong></font></td>
+		</tr>
+		<tr>
+			<td height="149" colspan="3">Hatten Sie in der letzten Woche Beschwerden mit der Haut?</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein<br />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<div align="left">Bitte w&auml;hlen Sie auf die betroffenen Bereiche.</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="21" align="right"><strong>Vorne</strong></td>
+			<td colspan="2" rowspan="12" valign="top">
+			<div align="center"><t:img src="mbfront.jpg" alt="" width="209" height="498" /><t:img src="back.jpg" alt="" width="217" height="504" /></div>
+			</td>
+			<td valign="top"><strong>Hinten</strong></td>
+		</tr>
+		<tr>
+			<td height="21">
+			<div align="right">Kopf <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Kopf</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Arm links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Hinteram links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Arm rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Hinterarm rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Brust links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Schulterblatt links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Brust rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Schulterblatt rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Bauch links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Unterer R&uuml;cken links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Bauch rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Unterer R&uuml;cken rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Oberschenkel links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Schenkel hinten links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Oberschenkel rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Schenkel hinten rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="33">
+			<div align="right">Schienbein und Fuss links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Waden und Ferse links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Schienbein Fuss rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Waden und Ferse rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" colspan="3">Hatten Sie deswegen einen Arzt konsultiert?<br />
+			(verbundene Frage mit vorher)!!!</td>
+			<td><input type="radio" name="radiobutton" value="radiobutton" /> Ja<br />
+			<input type="radio" name="radiobutton" value="radiobutton" /> Nein</td>
+		</tr>
+		<tr>
+			<td height="16" colspan="4"><font color="#000000"><strong>Frage 14: Enthesien (Punkte)</strong></font></td>
+		</tr>
+		<tr>
+			<td height="50" colspan="4">Bitte bewerten Sie die 13 markierten Enthesien (Punkte) durch lokalen Druck auf Vorhandensein von Schmerz.</td>
+		</tr>
+		<tr>
+			<td height="21" align="right"><strong>Vorne</strong></td>
+			<td colspan="2" rowspan="12" valign="top">
+			<div align="center"><t:img src="mbfront.jpg" alt="" width="209" height="498" /><t:img src="back.jpg" alt="" width="217" height="504" /></div>
+			</td>
+			<td valign="top"><strong>Hinten</strong></td>
+		</tr>
+		<tr>
+			<td height="21">
+			<div align="right">Schl&uuml;sselbein links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Becken links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Schl&uuml;sselbein rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Becken rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Plex links <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Sitzbein</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">Plex rechts <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Ferse links</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">H&uuml;fte aussen <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"><input type="radio" name="radiobutton" value="radiobutton" /> Ferse rechts</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="right">H&uuml;fte innen <input type="radio" name="radiobutton" value="radiobutton" /></div>
+			</td>
+			<td valign="top">
+			<div align="left"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td height="33">&nbsp;</td>
+			<td valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td height="50" colspan="3">&nbsp;</td>
+			<td><t:img src="buttonvorschau.png" alt="" width="134" height="30" /></td>
+		</tr>
+		<tr>
+			<td height="50" colspan="3">&nbsp;</td>
+			<td><t:apatient href="online_fragebogen"><t:img src="buttonzuruck.png" alt="" width="134" height="30" /></t:apatient></td>
+		</tr>
+	</table>
+</m:patientMasterMenu>

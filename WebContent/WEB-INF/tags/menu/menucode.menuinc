@@ -1,0 +1,4 @@
+<%
+request.setAttribute("horSmallMenuText", smallHorizontalText);
+request.setAttribute("horSmallMenuUrl", smallHorizontalUrl);
+%>
