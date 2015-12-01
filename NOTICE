@@ -1,9 +1,9 @@
-	ProjectH Backend
-	Copyright (C) 2015 Copyright 2015 MobileMan GmbH, www.mobileman.com
+    ProjectH Backend
+    Copyright (C) 2015 Copyright 2015 MobileMan GmbH, www.mobileman.com
 
-	This product includes following software:
+    This product includes following software:
 
-	(The Apache Software License, Version 2.0) projecth Backend (com.mobileman.projecth:projecth-backend:0.1.2-SNAPSHOT - no url defined)
+    (The Apache Software License, Version 2.0) projecth Backend (com.mobileman.projecth:projecth-backend:0.1.2-SNAPSHOT - no url defined)
     (COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0) - activation.jar
     (The BSD License) AntLR (antlr:antlr:2.7.6 - http://www.antlr.org/)
     (Public Domain) aopalliance-1.0.jar
