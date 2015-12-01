@@ -20,6 +20,7 @@ limitations under the License.
 <m:patientMasterMenu  print="${print}" menuitem="0" caption="Pers&ouml;nlicher Bericht">
 <jsp:attribute name="header">
 	<script src="<c:url value="/scripts/highcharts.js" />"></script>
+	<script src="<c:url value="<script src="<c:url value="https://code.highcharts.com/highcharts.js" />"></script>" />"></script>
 </jsp:attribute>
 <jsp:body>
 <r:report prefix="patient" />
