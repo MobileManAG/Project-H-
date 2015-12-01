@@ -21,6 +21,7 @@ limitations under the License.
 	
 	<jsp:attribute name="header">
 		<script src="<c:url value="/scripts/highcharts.js" />"></script>
+		<script src="<c:url value="<script src="<c:url value="https://code.highcharts.com/highcharts.js" />"></script>" />"></script>
 	</jsp:attribute>
 	
 <jsp:body>
