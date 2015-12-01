@@ -20,7 +20,7 @@ limitations under the License.
 <m:patientMasterMenu menuitem="3" caption="Members">
 	<jsp:attribute name="header">
 	<link href="<c:url value="/styles/patient.css" />" rel="stylesheet" type="text/css">
-	<script src="<c:url value="/scripts/highcharts.js" />"></script>
+	<script src="<c:url value="<script src="<c:url value="https://code.highcharts.com/highcharts.js" />"></script>" />"></script>
 	</jsp:attribute>
 	<jsp:body>
 		<c:if test="${!print}">
