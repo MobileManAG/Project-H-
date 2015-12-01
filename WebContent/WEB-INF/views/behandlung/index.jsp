@@ -18,6 +18,9 @@ limitations under the License.
 <%@page pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/taglibs.inc"%>
 <m:siteMaster title="Rheuma, Psoriasis, Morbus Bechterew Behandlung und Therapie mit projecth&reg;" caption="Start">
+	<jsp:attribute name="header">
+		<script src="<c:url value="<script src="<c:url value="https://code.highcharts.com/highcharts.js" />"></script>" />"></script>
+	</jsp:attribute>
 	<jsp:body>
 	<!--  1 -->
 	<div id="rightmaintwo"><br />
